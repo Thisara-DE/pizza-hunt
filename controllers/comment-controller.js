@@ -3,7 +3,7 @@ const { Pizza, Comment } = require('../models');
 const CommentController = {
     // add a comment to pizza
     addComment({ params, body }, res) {
-        // console.log(body);
+        console.log(body);
         Comment.create(body)
             .then(({ _id }) => {
                 return Pizza.findOneAndUpdate(

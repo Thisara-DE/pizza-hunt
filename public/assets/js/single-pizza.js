@@ -126,7 +126,7 @@ function handleNewCommentSubmit(event) {
     })
     .then(commentResponse => {
       console.log(commentResponse);
-      location.reload();
+      // location.reload();
     })
     .catch(err => {
       console.log(err);
@@ -178,7 +178,7 @@ $backBtn.addEventListener('click', function() {
   window.history.back();
 });
 
-getPizza();
-
 $newCommentForm.addEventListener('submit', handleNewCommentSubmit);
 $commentSection.addEventListener('submit', handleNewReplySubmit);
+
+getPizza();
