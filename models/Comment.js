@@ -6,7 +6,7 @@ const ReplySchema = new Schema(
         // set custom id to avoid confusion with parent comment's _id field
         replyId: {
             type: Schema.Types.ObjectId,
-            default: () => new Type.ObjectId()
+            default: () => new Types.ObjectId()
         },
         replyBody: {
             type: String,
